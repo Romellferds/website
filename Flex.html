@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    
+</head>
+<style>
+    
+    body {
+    background-color: #000000;
+  }
+
+/* navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #e73f07;
+  }
+  
+  .topnav a {
+    float: right;
+    margin-right: 30px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 6px solid rgb(14, 13, 13);
+  }
+  
+  .topnav a.active {
+    border-bottom: 6px solid rgb(7, 7, 7);
+  }
+  
+
+  
+  /* Background */
+  .div1 {
+   
+background: #131024;
+padding: 50px;
+height: 280px;
+align-items: center;
+justify-content: center;
+height: 1300px;
+}
+.div2{
+  background-color: #ff0000;
+  height: 10px;
+}
+.div3{
+  background: #131024;
+padding: 50px;
+height: 500px;
+
+}
+.div5{
+  background: #131024;
+padding: 50px;
+height: 400px;
+
+}
+.div4{
+ background-color:  #e73f07;
+}
+
+/* TEXT COLOR */
+h1{
+  color: #e73f07;
+  text-align: center;
+}
+h2{
+  color: #e73f07;
+}
+p {
+font-family: verdana;
+font-size: 15px;
+position: relative;
+text-align: center;
+
+color: #fff;
+
+}
+
+/* IMAGE */
+img.a {
+  vertical-align: baseline;
+  float: left; 
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+ 
+}
+
+img.b {
+  vertical-align: text-top;
+
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+  float: right;
+
+}
+
+img.c {
+  vertical-align: text-bottom;
+  float: left; 
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.p1{
+  
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.dropdown {
+                                position: relative;
+                                display: inline-block;
+                                margin: 20px;
+                              }
+                              
+                              .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                background-color: #f9f9f9;
+                                min-width: 160px;
+                                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                z-index: 1;
+                                margin: 30px;
+                                
+                              }
+
+                              /* trial */
+
+
+
+                              
+                              /* trial */
+                              
+                              .dropdown:hover .dropdown-content {
+                                display: block;
+                              }
+                              
+                              .desc {
+                                padding: 15px;
+                                text-align: center;
+                              }
+                              hr{
+                                width: 100%;
+                              }
+
+                              .footer {
+
+
+
+        text-align: center;
+                       padding: 10px;
+                                  font-size: 15px;
+  
+                     color: #000000;
+              position: fixed;
+           bottom: 0;
+                width: 100%;
+    position: relative;
+  }
+
+  /* part3 */
+  .flip-box {
+  background-color: transparent;
+  width: 1350px;
+  height: 400px;
+  border: 10px solid #e0fd26;
+  perspective: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/*  */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: #fff;
+}
+h2{
+  color: #fff;
+}
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+</style>
+
+
+<body>
+    <div class="topnav">
+       
+                <a href="Flex.html">Flex</a>
+                    <a href="Blogs.html">Blog</a>
+                              <a class="index.html" href="index.html">Home</a>
+                              </div>
+                             
+                              
+                              
+                              <div class="div1">
+                               
+                                <div class="main">
+
+                                    <h1>WELCOME TO MY FLEX PAGE</h1>
+                                    <hr>
+                                    
+                                    <h2>KIM'S PICTURE</h2>
+                                    
+                                    <div id="myBtnContainer">
+                                      <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+                                      <button class="btn" onclick="filterSelection('nature')"> THINGS I LIKE</button>
+                                      <button class="btn" onclick="filterSelection('cars')"> PEOPLE</button>
+                                      <button class="btn" onclick="filterSelection('people')"> MY SELF</button>
+                                    </div>
+                                   
+                                    <!-- Portfolio Gallery Grid -->
+                                    <div class="row">
+                                      <div class="column nature">
+                                        <div class="content">
+                                          <img src="Images\kim1.jpg" alt="Mountains" style="width:100%">
+                                          <h4>PET</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column nature">
+                                        <div class="content">
+                                        <img src=" Images\kim2.jpg" alt="Lights" style="width:100%">
+                                          <h4>SEA FOODS</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column nature">
+                                        <div class="content">
+                                        <img src=" Images\kim3.jpg" alt="Nature" style="width:100%">
+                                          <h4>ONLINE GAMES</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="column cars">
+                                        <div class="content">
+                                          <img src=" Images\kimf.jpg" alt="Car" style="width:100%">
+                                          <h4>SHS FRIENDS</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column cars">
+                                        <div class="content">
+                                        <img src=" Images\0e8a9fad-9be6-4657-b7fc-19a956b919cf.jpg" alt="Car" style="width:100%">
+                                          <h4>GF</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column cars">
+                                        <div class="content">
+                                        <img src=" Images\467467177_1440177036938432_5182506389940897766_n.jpg" alt="Car" style="width:100%">
+                                          <h4>FAMILY</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                    
+                                      <div class="column people">
+                                        <div class="content">
+                                          <img src=" Images\kimo1.jpg"alt="Car" style="width:100%">
+                                          <h4>SELF</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column people">
+                                        <div class="content">
+                                        <img src=" Images\kimo2.jpg" alt="Car" style="width:100%">
+                                          <h4>SELF</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                      <div class="column people">
+                                        <div class="content">
+                                        <img src=" Images\kimo3.jpg" alt="Car" style="width:100%">
+                                          <h4>SELF</h4>
+                                          <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                      </div>
+                                    <!-- END GRID -->
+                                    </div>
+                                    
+                                    <!-- END MAIN -->
+                                    </div>
+                                    
+                                    </div>
+                                    <script>
+                                    filterSelection("all")
+                                    function filterSelection(c) {
+                                      var x, i;
+                                      x = document.getElementsByClassName("column");
+                                      if (c == "all") c = "";
+                                      for (i = 0; i < x.length; i++) {
+                                        w3RemoveClass(x[i], "show");
+                                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                      }
+                                    }
+                                    
+                                    function w3AddClass(element, name) {
+                                      var i, arr1, arr2;
+                                      arr1 = element.className.split(" ");
+                                      arr2 = name.split(" ");
+                                      for (i = 0; i < arr2.length; i++) {
+                                        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                                      }
+                                    }
+                                    
+                                    function w3RemoveClass(element, name) {
+                                      var i, arr1, arr2;
+                                      arr1 = element.className.split(" ");
+                                      arr2 = name.split(" ");
+                                      for (i = 0; i < arr2.length; i++) {
+                                        while (arr1.indexOf(arr2[i]) > -1) {
+                                          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                                        }
+                                      }
+                                      element.className = arr1.join(" ");
+                                    }
+                                    
+                                    
+                                    // Add active class to the current button (highlight it)
+                                    var btnContainer = document.getElementById("myBtnContainer");
+                                    var btns = btnContainer.getElementsByClassName("btn");
+                                    for (var i = 0; i < btns.length; i++) {
+                                      btns[i].addEventListener("click", function(){
+                                        var current = document.getElementsByClassName("active");
+                                        current[0].className = current[0].className.replace(" active", "");
+                                        this.className += " active";
+                                      });
+                                    }
+                                    </script>
+                                    
+                                    </div>
+                              </div>
+
+                            
+                              
+
+                            </div>
+                            <div class="div4"><div class="footer"> &#169; FERNANDEZ  KIM 2024</div>
+                          </div>
+                            
+    
+</body>
+</html>
+

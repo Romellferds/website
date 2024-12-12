@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    
+</head>
+<style>
+    
+    body {
+    background-color: #000000;
+  }
+
+/* navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #e73f07;
+  }
+  
+  .topnav a {
+    float: right;
+    margin-right: 30px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 6px solid rgb(14, 13, 13);
+  }
+  
+  .topnav a.active {
+    border-bottom: 6px solid rgb(7, 7, 7);
+  }
+  
+
+  
+  /* Background */
+  .div1 {
+   
+background: #131024;
+padding: 50px;
+height: 280px;
+align-items: center;
+justify-content: center;
+}
+.div2{
+  background-color: #ff0000;
+  height: 10px;
+}
+.div3{
+  background: #131024;
+padding: 50px;
+height: 500px;
+
+}
+.div5{
+  background: #131024;
+padding: 50px;
+height: 400px;
+
+}
+.div4{
+ background-color:  #e73f07;
+}
+
+/* TEXT COLOR */
+h1{
+  color: #e73f07;
+  text-align: center;
+}
+h2{
+  color: #e73f07;
+}
+p {
+font-family: verdana;
+font-size: 15px;
+position: relative;
+text-align: center;
+
+color: #fff;
+
+
+}
+
+/* IMAGE */
+img.a {
+  vertical-align: baseline;
+  float: left; 
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+ 
+}
+
+img.b {
+  vertical-align: text-top;
+
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+  float: right;
+
+}
+
+img.c {
+  vertical-align: text-bottom;
+  float: left; 
+    background-color: #b8adb3;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.p1{
+  
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.dropdown {
+                                position: relative;
+                                display: inline-block;
+                                margin: 40px;
+                              }
+                              
+                              .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                background-color: #f9f9f9;
+                                min-width: 160px;
+                                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                z-index: 1;
+                                margin: 10px;
+                                
+                                
+                              }
+
+                              /* trial */
+
+
+
+                              
+                              /* trial */
+                              
+                              .dropdown:hover .dropdown-content {
+                                display: block;
+                              }
+                              
+                              .desc {
+                                padding: 15px;
+                                text-align: center;
+                              }
+                              hr{
+                                width: 100%;
+                              }
+
+                              .footer {
+
+
+
+        text-align: center;
+                       padding: 10px;
+                                  font-size: 15px;
+  
+                     color: #000000;
+              position: fixed;
+           bottom: 0;
+                width: 100%;
+    position: relative;
+  }
+
+  /* part3 */
+  .flip-box {
+  background-color: transparent;
+  width: 1350px;
+  height: 400px;
+  border: 10px solid #e0fd26;
+  perspective: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+</style>
+
+
+<body>
+    <div class="topnav">
+       
+                <a href="Flex.html">Flex</a>
+                    <a href="Blogs.html">Blog</a>
+                              <a class="index.html" href="index.html">Home</a>
+                              </div>
+                             
+                              
+                              
+                              <div class="div1">
+                                <h1>Lessons</h1>
+                              <div class="dropdown">
+                                <img src="Images/new.jpg"alt="Pineapple" alt="Cinque Terre" width="300" height="200">
+                                <hr>
+                                <div class="dropdown-content">
+                                <img src="Images/final123.jpg" alt="Pineapple" alt="Cinque Terre" width="500" height="500">
+                                <div class="desc">lesson learned</div>
+                                </div>
+                              </div>
+                              
+                              <div class="dropdown">
+                                <img src="Images\new1.jpg" width="300" height="200">
+                                <hr>
+                                <div class="dropdown-content">
+                                <img src="C:\KIM_HTML\Images\html.jpg" alt="Cinque Terre"width="500" height="500">
+                                <div class="desc">lesson learned</div>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <img src="Images\new2.jpg" alt="Cinque Terre" width="300" height="200">
+                                <hr>
+                                <div class="dropdown-content">
+                                <img src="C:\KIM_HTML\Images\html.jpg" alt="Cinque Terre" width="500" height="500">
+                                <div class="desc">lesson learned</div>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <img src="Images\new3.jpg" alt="Cinque Terre" width="300" height="200">
+                                <hr>
+                                <div class="dropdown-content">
+                                <img src="C:\KIM_HTML\Images\wave.jpg" alt="Cinque Terre" width="367" height="500" style="margin right: 10px;">
+                                <div class="desc">lesson learned</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="div2"></div>
+                            <div class="div3">
+                              
+                              </div>
+
+                            
+                                <div class="div5">   <div class="flip-box">
+                                  <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                      <img src="Images\gold.jpg" alt="Paris" style="width:100%;height:100%">
+                                    </div>
+                                    <div class="flip-box-back">
+                                      <img src="C:\KIM_HTML\Images\chal.jpg" alt="Paris" style="width:100%;height:100%">
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                            <div class="div4"><div class="footer"> &#169; FERNANDEZ   KIM 2024</div>
+                          </div>
+                            
+    
+</body>
+</html>
+
